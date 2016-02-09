@@ -7,11 +7,15 @@ Usage
 -----
 
 Installation is easy. Just import logging_fh and run
-`logging_fh.setup()`.
+`logging_fh.setup()`. Use the logging module like usual.
 
 ```python
-import logging_fh
-logging_fh.setup()
+>>> import logging_fh
+>>> logging_fh.setup()  # Setup logging.
+>>> import logging  # Use the logging module like usual.
+>>> logger = logging.getLogger(__name__)
+>>> logger.info('woot')
+[2016-02-09 15:41:30 +0000] [20500] [INFO] [__main__] woot
 ```
 
 Configuration
